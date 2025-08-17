@@ -30,7 +30,7 @@ const Contact = () => {
         throw new Error("Formspree not configured");
       }
     } catch (err) {
-      window.location.href = "mailto:youremail@example.com";
+      window.location.href = "mailto:aftabrasheed836@gmail.com";
     } finally {
       setLoading(false);
     }
