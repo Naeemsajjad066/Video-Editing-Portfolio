@@ -76,7 +76,7 @@ const Contact = () => {
               <div className="flex flex-wrap gap-3">
                 <a 
                   className="inline-flex items-center gap-2 rounded-md bg-accent px-3 py-2 text-sm hover-scale transition-all duration-300 hover:bg-accent/80" 
-                  href="mailto:youremail@example.com"
+                  href="mailto:aftabrasheed836@gmail.com"
                 >
                   <Mail className="h-4 w-4" /> Email
                 </a>
