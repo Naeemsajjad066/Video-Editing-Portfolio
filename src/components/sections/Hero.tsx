@@ -28,58 +28,110 @@ const Hero = () => {
           <div className="absolute top-96 right-1/4 w-1 h-1 bg-primary/60 rounded-full float-particle shadow-lg" style={{ animationDelay: '2.5s' }} />
         </div>
 
-        {/* Main content with enhanced animations */}
+        {/* Main content with enhanced animations and two-column layout */}
         <div className="relative z-10 container mx-auto container-padding flex min-h-[90vh] md:min-h-[95vh] items-center">
-          <div className="max-w-5xl">
-            {/* Badge with enhanced styling */}
-            <div className="text-reveal stagger-1 mb-8">
-              <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-black/30 backdrop-blur-md border border-white/30 shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-black/40">
-                <Sparkles className="h-5 w-5 text-primary animate-pulse" />
-                <span className="text-base font-semibold text-white tracking-wide">Premium Video Editing</span>
-                <div className="w-2 h-2 bg-primary rounded-full animate-ping" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-7xl">
+            {/* Left Column - Text Content */}
+            <div className="text-reveal stagger-1">
+              {/* Badge with enhanced styling */}
+              <div className="mb-6 mt-4">
+                <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-black/30 backdrop-blur-md border border-white/30 shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-black/40">
+                  <Sparkles className="h-5 w-5 text-primary animate-pulse" />
+                  <span className="text-base font-semibold text-white tracking-wide">Premium Video Editing</span>
+                  <div className="w-2 h-2 bg-primary rounded-full animate-ping" />
+                </div>
+              </div>
+
+              {/* Main heading with enhanced typography and solid colors */}
+              <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[0.85] mb-8 text-reveal stagger-2">
+                <span className="block text-white drop-shadow-2xl mb-2">Transforming</span>
+                <span className="block text-white drop-shadow-2xl mb-2">Ideas into</span>
+                <span className="text-primary drop-shadow-lg">
+                  Engaging Visuals
+                </span>
+              </h1>
+
+              {/* Enhanced description with better readability */}
+              <p className="text-white text-lg sm:text-xl md:text-2xl mb-10 max-w-3xl text-reveal stagger-3 leading-relaxed font-medium drop-shadow-lg">
+                I'm <strong className="text-white font-bold">Aftab Rasheed</strong>, a professional video editor crafting cinematic stories for YouTube, brands, and creators worldwide.
+              </p>
+
+              {/* Enhanced CTA buttons with solid styling */}
+              <div className="flex flex-col sm:flex-row gap-5 text-reveal stagger-5">
+                <Button asChild variant="hero" size="lg" className="group relative overflow-hidden btn-modern hero-glow text-lg font-semibold px-10 py-6 h-auto shadow-2xl hover:shadow-primary/25">
+                  <a href="#portfolio" aria-label="View my work" className="relative z-10">
+                    <Play className="mr-3 h-6 w-6 group-hover:scale-110 transition-transform duration-200" />
+                    View My Work
+                    <div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </a>
+                </Button>
+                
+                <Button asChild variant="outline" size="lg" className="group border-2 border-white/40 hover:border-white/60 hover:bg-black/30 transition-all duration-300 btn-modern text-lg font-semibold px-10 py-6 h-auto bg-black/30 backdrop-blur-md shadow-2xl">
+                  <a href="#contact" aria-label="Hire me" className="flex items-center gap-2 text-white hover:text-primary">
+                    <Zap className="h-6 w-6 group-hover:scale-110 transition-transform duration-200" />
+                    Hire Me
+                  </a>
+                </Button>
+              </div>
+
+              {/* Trust indicators with solid styling */}
+              <div className="mt-12 text-reveal stagger-6">
+                <p className="text-white/90 text-base font-medium mb-4">Trusted by creators from:</p>
+                <div className="flex items-center gap-8 opacity-90">
+                  <div className="text-sm font-semibold text-white hover:text-primary transition-colors cursor-pointer hover:scale-105 transform duration-200">YouTube</div>
+                  <div className="text-sm font-semibold text-white hover:text-primary transition-colors cursor-pointer hover:scale-105 transform duration-200">TikTok</div>
+                  <div className="text-sm font-semibold text-white hover:text-primary transition-colors cursor-pointer hover:scale-105 transform duration-200">Instagram</div>
+                  <div className="text-sm font-semibold text-white hover:text-primary transition-colors cursor-pointer hover:scale-105 transform duration-200">Brands</div>
+                </div>
               </div>
             </div>
 
-            {/* Main heading with enhanced typography and solid colors */}
-            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.85] mb-8 text-reveal stagger-2">
-              <span className="block text-white drop-shadow-2xl mb-2">Transforming</span>
-              <span className="block text-white drop-shadow-2xl mb-2">Ideas into</span>
-              <span className="text-primary drop-shadow-lg">
-                Engaging Visuals
-              </span>
-            </h1>
+            {/* Right Column - Profile Photo */}
+            <div className="flex justify-center lg:justify-end text-reveal stagger-4 -mt-8 lg:-mt-12">
+              <div className="relative group">
+                {/* Main profile photo container */}
+                <div className="relative w-96 h-96 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] rounded-full overflow-hidden shadow-2xl group-hover:shadow-primary/25 transition-all duration-500">
+                  {/* Profile image */}
+                  <img
+                    src="/profile/Profile.png"
+                    alt="Aftab Rasheed - Professional Video Editor"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  
+                  {/* Gradient overlay for depth */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20 group-hover:to-black/10 transition-all duration-500" />
+                </div>
 
-            {/* Enhanced description with better readability */}
-            <p className="text-white text-lg sm:text-xl md:text-2xl mb-10 max-w-3xl text-reveal stagger-3 leading-relaxed font-medium drop-shadow-lg">
-              I'm <strong className="text-white font-bold">Aftab Rasheed</strong>, a professional video editor crafting cinematic stories for YouTube, brands, and creators worldwide.
-            </p>
+                {/* Animated border ring */}
+                <div className="absolute inset-0 w-96 h-96 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] rounded-full border-4 border-primary/30 group-hover:border-primary/60 transition-all duration-500 animate-pulse" />
+                
+                {/* Outer glow ring */}
+                <div className="absolute inset-0 w-96 h-96 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] rounded-full border-2 border-primary/20 group-hover:border-primary/40 transition-all duration-500 blur-sm" />
+                
+                {/* Floating elements around the photo */}
+                <div className="absolute -top-6 -right-6 w-20 h-20 bg-primary/20 backdrop-blur-md rounded-full border border-primary/40 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+                  <Award className="w-10 h-10 text-primary" />
+                </div>
+                
+                <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-white/20 backdrop-blur-md rounded-full border border-white/40 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+                  <Star className="w-10 h-10 text-white" />
+                </div>
+                
+                <div className="absolute top-1/2 -right-12 w-16 h-16 bg-primary/30 backdrop-blur-md rounded-full border border-primary/50 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+                  <CheckCircle2 className="w-8 h-8 text-primary" />
+                </div>
+                
+                <div className="absolute top-1/2 -left-12 w-16 h-16 bg-white/30 backdrop-blur-md rounded-full border border-white/50 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+                  <TrendingUp className="w-8 h-8 text-white" />
+                </div>
 
-            {/* Enhanced CTA buttons with solid styling */}
-            <div className="flex flex-col sm:flex-row gap-5 text-reveal stagger-5">
-              <Button asChild variant="hero" size="lg" className="group relative overflow-hidden btn-modern hero-glow text-lg font-semibold px-10 py-6 h-auto shadow-2xl hover:shadow-primary/25">
-                <a href="#portfolio" aria-label="View my work" className="relative z-10">
-                  <Play className="mr-3 h-6 w-6 group-hover:scale-110 transition-transform duration-200" />
-                  View My Work
-                  <div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </a>
-              </Button>
-              
-              <Button asChild variant="outline" size="lg" className="group border-2 border-white/40 hover:border-white/60 hover:bg-black/30 transition-all duration-300 btn-modern text-lg font-semibold px-10 py-6 h-auto bg-black/30 backdrop-blur-md shadow-2xl">
-                <a href="#contact" aria-label="Hire me" className="flex items-center gap-2 text-white hover:text-primary">
-                  <Zap className="h-6 w-6 group-hover:scale-110 transition-transform duration-200" />
-                  Hire Me
-                </a>
-              </Button>
-            </div>
-
-            {/* Trust indicators with solid styling */}
-            <div className="mt-12 text-reveal stagger-6">
-              <p className="text-white/90 text-base font-medium mb-4">Trusted by creators from:</p>
-              <div className="flex items-center gap-8 opacity-90">
-                <div className="text-sm font-semibold text-white hover:text-primary transition-colors cursor-pointer hover:scale-105 transform duration-200">YouTube</div>
-                <div className="text-sm font-semibold text-white hover:text-primary transition-colors cursor-pointer hover:scale-105 transform duration-200">TikTok</div>
-                <div className="text-sm font-semibold text-white hover:text-primary transition-colors cursor-pointer hover:scale-105 transform duration-200">Instagram</div>
-                <div className="text-sm font-semibold text-white hover:text-primary transition-colors cursor-pointer hover:scale-105 transform duration-200">Brands</div>
+                {/* Bottom caption */}
+                <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 text-center">
+                  <div className="bg-black/40 backdrop-blur-md rounded-full px-8 py-4 border border-white/20">
+                    <p className="text-white font-semibold text-xl">Aftab Rasheed</p>
+                    <p className="text-primary text-base font-medium">Video Editor & Creator</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
