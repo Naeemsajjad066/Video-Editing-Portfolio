@@ -87,7 +87,7 @@ const Hero = () => {
             </div>
 
             {/* Right Column - Profile Photo */}
-            <div className="flex justify-center lg:justify-end text-reveal stagger-4 order-1 lg:order-2 mb-8 lg:mb-0">
+            <div className="flex justify-center lg:justify-end text-reveal stagger-4 order-1 lg:order-2 mb-8 lg:mb-0 mt-4 lg:mt-0">
               <div className="relative group">
                 {/* Main profile photo container */}
                 <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] 2xl:w-[32rem] 2xl:h-[32rem] rounded-full overflow-hidden shadow-2xl group-hover:shadow-primary/25 transition-all duration-500">
