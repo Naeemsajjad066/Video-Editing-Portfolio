@@ -22,7 +22,7 @@ const allVideos: VideoItem[] = [
     id: "showreel-1", 
     title: "Showreel – Cinematic Edit", 
     category: "YouTube", 
-    videoUrl: "/videos/intro-video.mp4",
+    videoUrl: "https://youtu.be/cCAKLj9rQxM",
     thumbnailUrl: "/thumbnails/image.png",
     description: "A cinematic showcase of my best work featuring dynamic transitions, color grading, and storytelling techniques.",
     duration: "2:45",
