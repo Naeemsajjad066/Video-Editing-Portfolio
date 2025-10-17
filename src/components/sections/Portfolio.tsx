@@ -23,131 +23,76 @@ const allVideos: VideoItem[] = [
     title: "Showreel – Cinematic Edit", 
     category: "YouTube", 
     videoUrl: "https://youtu.be/cCAKLj9rQxM",
-    thumbnailUrl: "/thumbnails/image.png",
+    thumbnailUrl: "https://img.youtube.com/vi/cCAKLj9rQxM/maxresdefault.jpg",
     description: "A cinematic showcase of my best work featuring dynamic transitions, color grading, and storytelling techniques.",
     duration: "2:45",
     views: "15.2K",
     date: "2024"
   },
   { 
-    id: "ad-spot-1", 
-    title: "Brand Commercial", 
-    category: "Ads", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "High-impact commercial for luxury brand with stunning visuals, perfect timing, and emotional storytelling.",
-    duration: "1:30",
+    id: "project-2", 
+    title: "Creative Video Project", 
+    category: "YouTube", 
+    videoUrl: "https://youtu.be/2caP2EsQarQ",
+    thumbnailUrl: "https://img.youtube.com/vi/2caP2EsQarQ/maxresdefault.jpg",
+    description: "High-impact creative video with stunning visuals, perfect timing, and emotional storytelling.",
+    duration: "3:20",
     views: "8.7K",
     date: "2024"
   },
   { 
-    id: "corporate-1", 
-    title: "Company Overview", 
-    category: "Corporate", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "Professional corporate presentation with clean graphics, smooth animations, and professional voiceover.",
-    duration: "3:15",
+    id: "project-3", 
+    title: "Professional Edit", 
+    category: "Ads", 
+    videoUrl: "https://youtu.be/xb65v82Fm3E",
+    thumbnailUrl: "https://img.youtube.com/vi/xb65v82Fm3E/maxresdefault.jpg",
+    description: "Professional video presentation with clean graphics, smooth animations, and professional execution.",
+    duration: "4:15",
     views: "12.1K",
     date: "2024"
   },
   { 
-    id: "youtube-1", 
-    title: "Creator Content", 
-    category: "YouTube", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "Engaging YouTube content edit with retention hooks, dynamic pacing, and audience engagement elements.",
-    duration: "8:30",
+    id: "project-4", 
+    title: "Dynamic Content", 
+    category: "Corporate", 
+    videoUrl: "https://youtu.be/Naram6TjAec",
+    thumbnailUrl: "https://img.youtube.com/vi/Naram6TjAec/maxresdefault.jpg",
+    description: "Engaging content edit with retention hooks, dynamic pacing, and audience engagement elements.",
+    duration: "5:30",
     views: "45.3K",
     date: "2024"
   },
   { 
-    id: "short-1", 
-    title: "Viral Short", 
+    id: "project-5", 
+    title: "Visual Storytelling", 
     category: "Shorts", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "High-energy short-form content optimized for maximum retention and viral potential across platforms.",
-    duration: "0:45",
+    videoUrl: "https://youtu.be/896r_ixafZY",
+    thumbnailUrl: "https://img.youtube.com/vi/896r_ixafZY/maxresdefault.jpg",
+    description: "High-energy content optimized for maximum retention and viral potential across platforms.",
+    duration: "2:45",
     views: "89.2K",
     date: "2024"
   },
   { 
-    id: "ad-spot-2", 
-    title: "Product Launch", 
+    id: "project-6", 
+    title: "Cinematic Production", 
     category: "Ads", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "Dynamic product reveal video with excitement building, clear messaging, and strong call-to-action.",
-    duration: "2:00",
+    videoUrl: "https://youtu.be/5TC4zD6CZX4",
+    thumbnailUrl: "https://img.youtube.com/vi/5TC4zD6CZX4/maxresdefault.jpg",
+    description: "Dynamic cinematic video with excitement building, clear messaging, and strong visual appeal.",
+    duration: "3:00",
     views: "23.8K",
     date: "2024"
   },
   { 
-    id: "corporate-2", 
-    title: "Training Video", 
+    id: "project-7", 
+    title: "Creative Masterpiece", 
     category: "Corporate", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "Educational corporate training with clear visuals, step-by-step instructions, and professional presentation.",
-    duration: "5:45",
+    videoUrl: "https://youtu.be/egkRLaANzFM",
+    thumbnailUrl: "https://img.youtube.com/vi/egkRLaANzFM/maxresdefault.jpg",
+    description: "Professional video production with clear visuals, step-by-step presentation, and creative execution.",
+    duration: "6:45",
     views: "18.9K",
-    date: "2024"
-  },
-  { 
-    id: "short-2", 
-    title: "Social Media Edit", 
-    category: "Shorts", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "Trendy social media content with current trends, engaging transitions, and platform-specific optimization.",
-    duration: "0:30",
-    views: "67.4K",
-    date: "2024"
-  },
-  { 
-    id: "youtube-2", 
-    title: "Educational Series", 
-    category: "YouTube", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "Comprehensive educational content with clear explanations, visual aids, and engaging presentation style.",
-    duration: "12:20",
-    views: "34.7K",
-    date: "2024"
-  },
-  { 
-    id: "ad-spot-3", 
-    title: "Event Promo", 
-    category: "Ads", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "Exciting event promotion with dynamic visuals, compelling messaging, and strong audience appeal.",
-    duration: "1:15",
-    views: "31.2K",
-    date: "2024"
-  },
-  { 
-    id: "corporate-3", 
-    title: "Client Testimonial", 
-    category: "Corporate", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "Authentic client testimonial with professional editing, clear audio, and compelling storytelling.",
-    duration: "2:30",
-    views: "9.6K",
-    date: "2024"
-  },
-  { 
-    id: "short-3", 
-    title: "Behind the Scenes", 
-    category: "Shorts", 
-    videoUrl: "/videos/intro-video.mp4",
-    thumbnailUrl: "/thumbnails/image.png",
-    description: "Exclusive behind-the-scenes content with raw footage, authentic moments, and engaging editing.",
-    duration: "0:55",
-    views: "42.8K",
     date: "2024"
   }
 ];
@@ -339,42 +284,38 @@ const Portfolio = () => {
       {/* Video Modal */}
       <Dialog open={openId !== null} onOpenChange={handleVideoClose}>
         <DialogContent className="max-w-4xl">
-          {openId && (
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold">
-                {allVideos.find(v => v.id === openId)?.title}
-              </h3>
-              <p className="text-muted-foreground">
-                {allVideos.find(v => v.id === openId)?.description}
-              </p>
-              <div className="aspect-video bg-black rounded-lg overflow-hidden">
-                <video
-                  src={allVideos.find(v => v.id === openId)?.videoUrl}
-                  className="w-full h-full"
-                  controls
-                  autoPlay
-                  muted
-                  onError={(e) => {
-                    console.error('Video failed to load:', e.currentTarget.src);
-                    const videoElement = e.currentTarget;
-                    videoElement.style.display = 'none';
-                    const errorDiv = document.createElement('div');
-                    errorDiv.className = 'flex items-center justify-center h-full text-white';
-                    errorDiv.innerHTML = '<p>Video failed to load. Please check the file path.</p>';
-                    videoElement.parentNode?.appendChild(errorDiv);
-                  }}
-                >
-                  <source src={allVideos.find(v => v.id === openId)?.videoUrl} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+          {openId && (() => {
+            const video = allVideos.find(v => v.id === openId);
+            // Extract YouTube video ID from URL
+            const videoId = video?.videoUrl.includes('youtu.be/') 
+              ? video.videoUrl.split('youtu.be/')[1]?.split('?')[0]
+              : video?.videoUrl.split('v=')[1]?.split('&')[0];
+            
+            return (
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold">
+                  {video?.title}
+                </h3>
+                <p className="text-muted-foreground">
+                  {video?.description}
+                </p>
+                <div className="aspect-video bg-black rounded-lg overflow-hidden">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title={video?.title}
+                  />
+                </div>
+                <div className="flex items-center justify-between text-sm text-muted-foreground">
+                  <span>Duration: {video?.duration}</span>
+                  <span>Views: {video?.views}</span>
+                  <span>Date: {video?.date}</span>
+                </div>
               </div>
-              <div className="flex items-center justify-between text-sm text-muted-foreground">
-                <span>Duration: {allVideos.find(v => v.id === openId)?.duration}</span>
-                <span>Views: {allVideos.find(v => v.id === openId)?.views}</span>
-                <span>Date: {allVideos.find(v => v.id === openId)?.date}</span>
-              </div>
-            </div>
-          )}
+            );
+          })()}
         </DialogContent>
       </Dialog>
     </section>
